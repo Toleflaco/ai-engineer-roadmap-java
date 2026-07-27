@@ -15,25 +15,31 @@ Es un hub. No contiene código: enlaza a los cuatro repositorios de proyecto y a
 | Fase | Contenido | Estado |
 | --- | --- | --- |
 | 0   | Prerrequisitos Java + Spring Boot sólido | Completada |
-| 1   | Fundamentos LLM + Spring AI core | En curso |
+| 1   | Fundamentos LLM + Spring AI core | Completada |
 | 2   | Tool calling, agentes y MCP | Planificada |
 | 3   | RAG empresarial con vector stores | Planificada |
 | 4   | Observabilidad, testing y seguridad enterprise | Planificada |
 | 5   | Cloud, despliegue y LLMOps sobre AWS | Planificada |
 | 6   | Criterio arquitectónico y portfolio | Planificada |
 
-Cada fase termina con un proyecto entregable en un repositorio independiente. La bitácora de sesiones registra el progreso día a día.
+Cada fase termina con un proyecto entregable en un repositorio independiente. La bitácora de sesiones registra el progreso día a día. La Fase 1 se cerró técnicamente en la Sesión 08.
 
 ## Los cuatro proyectos
 
-1. **API de análisis inteligente de documentos** (Fase 1). Servicio Spring Boot que analiza contratos PDF, extrae cláusulas estructuradas y permite consulta conversacional con memoria persistente. Tres proveedores LLM intercambiables. → *Próximo*
-2. **Servidor MCP empresarial y agente consumidor** (Fase 2). Servidor MCP que expone funciones de un ERP simulado como herramientas de IA, más un agente Spring AI con bucle ReAct, guardrails de presupuesto y human-in-the-loop. → *Planificado*
+1. **Analizador de CVs con Spring AI y Anthropic Claude** (Fase 1). Servicio Spring Boot con tres endpoints: chat con memoria conversacional (in-memory) segmentada por conversationId, análisis estructurado de CV en texto plano, y análisis multimodal de CV en PDF nativo. Observabilidad de latencia, tokens y coste estimado por llamada. Manejo de errores homogéneo con ProblemDetail RFC 7807. → [Completado con divergencias del plan original](https://github.com/Toleflaco/document-analyzer-ai)
+2. **Proyecto Fase 2 — tool calling, agentes y MCP**. Aplicación Spring AI centrada en function calling, orquestación de agentes y consumo de servidores MCP. Alcance concreto y proyecto vehículo por decidir. → *Por decidir*
 3. **Knowledge base empresarial multi-tenant** (Fase 3). Sistema RAG con búsqueda híbrida, reranking, citación obligatoria y aislamiento estricto entre tenants. → *Planificado*
 4. **AI Gateway multi-modelo en AWS** (Fase 5). Servicio en ECS Fargate con routing entre modelos, cache semántico, fallback automático y observabilidad de coste con Prometheus y Grafana. → *Planificado*
 
+## Divergencias del plan original
+
+El roadmap fusiona el Master AI Engineer de codeja.dev con un Roadmap Maestro personal. El plan de Fase 1 preveía análisis de contratos PDF, memoria conversacional persistente en Redis, y tres proveedores LLM intercambiables. Por prioridad de búsqueda activa de empleo, la Fase 1 se ha cerrado con divergencias: dominio CV en lugar de contratos, memoria in-memory en lugar de Redis, un solo proveedor (Anthropic Claude Sonnet 4.5) en lugar de tres. Los objetivos de aprendizaje de la fase (ChatClient, output estructurado, memoria conversacional, multimodal, manejo de errores, observabilidad básica) quedan cubiertos.
+
+Estas divergencias se tratan como deuda pedagógica explícita, no como piezas terminadas. Plan post-empleo: completar los huecos originales de cada fase cuando desaparezca la presión de candidaturas.
+
 ## Cómo navegar el repositorio
 
-- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico.
+- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico. Actualizada hasta la Sesión 08.
 - **`decisions/`** — ADRs transversales que afectan a más de un proyecto (formato Michael Nygard). Aparecerá cuando exista el primero.
 - **`CLAUDE.md`** — Instrucciones de trabajo para Claude Code en este repositorio.
 
@@ -45,4 +51,4 @@ Cada fase termina con un proyecto entregable en un repositorio independiente. La
 
 ---
 
-*Última actualización: 2026-07-23*
+*Última actualización: 2026-07-27*
