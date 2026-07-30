@@ -16,7 +16,7 @@ Es un hub. No contiene código: enlaza a los cuatro repositorios de proyecto y a
 | --- | --- | --- |
 | 0   | Prerrequisitos Java + Spring Boot sólido | Completada |
 | 1   | Fundamentos LLM + Spring AI core | Completada |
-| 2   | Tool calling, agentes y MCP | Planificada |
+| 2   | Tool calling, agentes y MCP | En curso |
 | 3   | RAG empresarial con vector stores | Planificada |
 | 4   | Observabilidad, testing y seguridad enterprise | Planificada |
 | 5   | Cloud, despliegue y LLMOps sobre AWS | Planificada |
@@ -27,7 +27,7 @@ Cada fase termina con un proyecto entregable en un repositorio independiente. La
 ## Los cuatro proyectos
 
 1. **Analizador de CVs con Spring AI y Anthropic Claude** (Fase 1). Servicio Spring Boot con tres endpoints: chat con memoria conversacional (in-memory) segmentada por conversationId, análisis estructurado de CV en texto plano, y análisis multimodal de CV en PDF nativo. Observabilidad de latencia, tokens y coste estimado por llamada. Manejo de errores homogéneo con ProblemDetail RFC 7807. → [Completado con divergencias del plan original](https://github.com/Toleflaco/document-analyzer-ai)
-2. **Proyecto Fase 2 — tool calling, agentes y MCP**. Aplicación Spring AI centrada en function calling, orquestación de agentes y consumo de servidores MCP. Alcance concreto y proyecto vehículo por decidir. → *Por decidir*
+2. **`erp-mcp-server`** (Fase 2). Servidor MCP sobre Spring Boot 4.1 y Spring AI 2.0 que expone tools de lectura y escritura sobre un dominio ERP (productos, proveedores, pedidos de compra, facturas), verificado end-to-end con mcp-inspector. Segundo repo de la fase, `erp-purchasing-agent` (agente ReAct consumidor de estas tools), pendiente de arrancar. → [En desarrollo](https://github.com/Toleflaco/erp-mcp-server)
 3. **Knowledge base empresarial multi-tenant** (Fase 3). Sistema RAG con búsqueda híbrida, reranking, citación obligatoria y aislamiento estricto entre tenants. → *Planificado*
 4. **AI Gateway multi-modelo en AWS** (Fase 5). Servicio en ECS Fargate con routing entre modelos, cache semántico, fallback automático y observabilidad de coste con Prometheus y Grafana. → *Planificado*
 
@@ -39,7 +39,7 @@ Estas divergencias se tratan como deuda pedagógica explícita, no como piezas t
 
 ## Cómo navegar el repositorio
 
-- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico. Actualizada hasta la Sesión 08.
+- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico. Actualizada hasta la [Sesión 13](bitacora/2026-07-30-sesion-13.md).
 - **`decisions/`** — ADRs transversales que afectan a más de un proyecto (formato Michael Nygard). Aparecerá cuando exista el primero.
 - **`CLAUDE.md`** — Instrucciones de trabajo para Claude Code en este repositorio.
 
@@ -51,4 +51,4 @@ Estas divergencias se tratan como deuda pedagógica explícita, no como piezas t
 
 ---
 
-*Última actualización: 2026-07-27*
+*Última actualización: 2026-07-30*
