@@ -28,7 +28,7 @@ ai-engineer-roadmap-java/
 └── decisions/             ADRs transversales (a partir de Fase 1)
 ```
 
-Las carpetas `bitacora/` y `decisions/` se crean cuando existan sus primeros contenidos, no antes. Los ficheros de bitácora siguen el patrón `AAAA-MM-DD-sesion-NN.md`, numerados de forma incremental global (no por fase). Los ADRs siguen el patrón `NNNN-titulo-en-kebab-case.md`, numerados de forma incremental.
+Las carpetas `bitacora/` y `decisions/` se crean cuando existan sus primeros contenidos, no antes. Los ficheros de bitácora siguen el patrón `SesionNN-AAAA-MM-DD.md`, numerados de forma incremental global (no por fase). Las sesiones que son continuación directa de otra el mismo bloque de trabajo añaden un sufijo decimal (`SesionNN-2-AAAA-MM-DD.md`, `SesionNN-3-...`); las sesiones cortas intercaladas entre dos sesiones numeradas usan un decimal propio (`SesionNN.5-AAAA-MM-DD.md`). Los ADRs siguen el patrón `NNNN-titulo-en-kebab-case.md`, numerados de forma incremental.
 
 ## Convenciones
 
@@ -58,7 +58,7 @@ Los repositorios de proyecto no dependen técnicamente de este hub: son autónom
 
 Al ser un repositorio de documentación sin código, no hay comandos de build ni de test. Los flujos habituales son de Git puro:
 
-- Añadir entrada de bitácora al final de cada sesión, en `bitacora/AAAA-MM-DD-sesion-NN.md`.
+- Añadir entrada de bitácora al final de cada sesión, en `bitacora/SesionNN-AAAA-MM-DD.md`.
 - Actualizar el estado del roadmap en `README.md` cuando se cierre una fase.
 - Escribir un ADR nuevo en `decisions/` cuando se adopte una decisión transversal.
 - Commits directos a `main`: al ser un repo unipersonal de documentación, no hay ramas de feature ni pull requests internos.

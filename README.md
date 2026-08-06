@@ -39,7 +39,7 @@ Estas divergencias se tratan como deuda pedagógica explícita, no como piezas t
 
 ## Cómo navegar el repositorio
 
-- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico. Actualizada hasta la [Sesión 13](bitacora/2026-07-30-sesion-13.md).
+- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico. Actualizada hasta la [Sesión 15](bitacora/Sesion15-2026-08-05.md).
 - **`decisions/`** — ADRs transversales que afectan a más de un proyecto (formato Michael Nygard). Aparecerá cuando exista el primero.
 - **`CLAUDE.md`** — Instrucciones de trabajo para Claude Code en este repositorio.
 
