@@ -12,7 +12,7 @@ Roadmap público de mi transición de Java backend a AI Engineer, con cuatro pro
 
 ## Sobre este repositorio
 
-Soy Manuel Toledano, desarrollador Java backend. Después de reactivar mi carrera en desarrollo en 2026 con dos proyectos backend serios (monolito y microservicios sobre Spring Boot), he decidido apostar por la IA aplicada como siguiente paso lógico: no abandono Java, lo llevo al terreno donde el mercado está demandando perfiles. Este repositorio documenta ese camino en abierto.
+Soy Manuel Toledano, desarrollador Java backend. Después de reactivar mi carrera en desarrollo en 2025 con dos proyectos backend serios (monolito y microservicios sobre Spring Boot), he decidido apostar por la IA aplicada como siguiente paso lógico: no abandono Java, lo llevo al terreno donde el mercado está demandando perfiles. Este repositorio documenta ese camino en abierto.
 
 Es un hub. No contiene código: enlaza a los repositorios de proyecto y aloja la bitácora de progreso y las decisiones arquitectónicas transversales.
 
