@@ -40,6 +40,20 @@ Este repositorio es el **hub documental** del roadmap. No es un monorepo, no con
 
 Cada fase termina con uno o varios proyectos entregables en repositorios independientes.
 
+### Criterios de cierre
+
+Una fase se considera **completada** cuando sus objetivos mínimos están cubiertos, existe al menos un entregable verificable y la deuda aplazada está documentada. “Completada” no significa que se haya implementado todo el plan original sin divergencias.
+
+| Fase | Objetivos mínimos | Entregable o evidencia | Deuda conocida |
+| ---- | ----------------- | ---------------------- | -------------- |
+| 0 | Demostrar una base sólida de Java y Spring Boot para abordar los proyectos del roadmap. | Proyectos backend previos documentados y utilizables como base. | Ninguna pendiente en el alcance actual. |
+| 1 | Usar `ChatClient`, output estructurado, memoria conversacional, multimodalidad, manejo homogéneo de errores y observabilidad básica. | `document-analyzer-ai` funcional y documentado. | Probar proveedores LLM adicionales y recuperar el dominio original de análisis de contratos si sigue siendo relevante. |
+| 2 | Implementar tool calling, exponer tools mediante MCP y construir un agente ReAct que las consuma a través de un cliente MCP. | `erp-mcp-server` operativo y `erp-purchasing-agent` capaz de completar objetivos de compras sobre el dominio ERP. | Completar el agente y documentar sus límites operativos. |
+| 3 | Implementar ingestion, búsqueda híbrida, reranking, citación obligatoria y aislamiento estricto entre tenants. | Repositorio RAG independiente con documentación, pruebas de aislamiento y consultas reproducibles. | Definir el proveedor de vector store y los límites de escala cuando comience la fase. |
+| 4 | Consolidar observabilidad, testing y seguridad sobre los proyectos existentes, con métricas, trazabilidad, gestión de secretos y revisión de errores. | Cambios documentados y verificables en los repositorios de Fases 1, 2 y 3; no requiere un proyecto independiente. | El alcance exacto se concretará al cerrar las fases anteriores. |
+| 5 | Desplegar un servicio multi-modelo en AWS con routing, fallback, cache semántico y observabilidad de coste. | AI Gateway desplegable en ECS Fargate, con documentación operativa y evidencia de ejecución. | Definir los modelos soportados, el presupuesto de coste y la estrategia de operación. |
+| 6 | Comparar alternativas, justificar decisiones transversales y presentar el portfolio con sus límites y deuda técnica. | Portfolio navegable, ADRs relevantes y revisión final de los proyectos y sus evidencias. | Ninguna hasta evaluar el conjunto completo. |
+
 ## Proyectos entregables
 
 Los proyectos son las unidades conceptuales que demuestran los objetivos de cada fase. Un proyecto puede estar implementado por uno o varios repositorios independientes.
