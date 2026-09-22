@@ -40,6 +40,18 @@ Este repositorio es el **hub documental** del roadmap. No es un monorepo, no con
 
 Cada fase termina con uno o varios proyectos entregables en repositorios independientes.
 
+### Fase 4: Observabilidad, testing y seguridad enterprise
+
+La Fase 4 es transversal a los proyectos de las Fases 1, 2 y 3. No introduce un proyecto ni un repositorio independiente: su entregable consiste en consolidar las capacidades operativas y de seguridad de los proyectos existentes antes de abordar el despliegue cloud de la Fase 5.
+
+El alcance mínimo de esta fase es:
+
+- trazabilidad de llamadas LLM, métricas de latencia, tokens y coste;
+- estrategia de testing para componentes deterministas, integraciones y flujos con modelos;
+- gestión de secretos y configuración sensible;
+- manejo consistente de errores y límites operativos;
+- revisión de seguridad y documentación de riesgos conocidos.
+
 ### Criterios de cierre
 
 Una fase se considera **completada** cuando sus objetivos mínimos están cubiertos, existe al menos un entregable verificable y la deuda aplazada está documentada. “Completada” no significa que se haya implementado todo el plan original sin divergencias.
