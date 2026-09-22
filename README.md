@@ -123,7 +123,9 @@ Estas divergencias se tratan como deuda pedagógica explícita, no como piezas t
 
 ## Cómo navegar el repositorio
 
-- **`decisions/`** — ADRs transversales que afectan a más de un proyecto (formato Michael Nygard). Aparecerá cuando exista el primero.
+- **[`projects.md`](projects.md)** — Catálogo normalizado de proyectos, repositorios, referencias y limitaciones.
+- **[`CONTRIBUTING.md`](CONTRIBUTING.md)** — Guía para actualizar el estado y mantener la documentación.
+- **`decisions/`** — ADRs transversales que afectan a más de un proyecto (formato Michael Nygard).
 - **`CLAUDE.md`** — Instrucciones de trabajo para Claude Code en este repositorio.
 
 ## Contexto

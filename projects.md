@@ -39,6 +39,9 @@ Todavía no se han creado releases versionadas para estos proyectos.
   - [erp-mcp-server](https://github.com/Toleflaco/erp-mcp-server) — servidor MCP
   - [erp-purchasing-agent](https://github.com/Toleflaco/erp-purchasing-agent) —
     agente ReAct
+- **Nota de arquitectura:** Este proyecto está implementado en dos repositorios
+  independientes porque el servidor MCP y el agente ReAct tienen
+  responsabilidades, ciclos de vida y despliegues separados.
 - **Versión o commit de referencia:**
   - `erp-mcp-server`: [`94c73dc1eb68352b85b7770afb8e2a2b2a559f8c`](https://github.com/Toleflaco/erp-mcp-server/commit/94c73dc1eb68352b85b7770afb8e2a2b2a559f8c) en `main`
   - `erp-purchasing-agent`: `8448f6b1b1681680cadbfa6221f845109715db36` en `main`

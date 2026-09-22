@@ -6,7 +6,7 @@ Instrucciones de trabajo para Claude Code en el repositorio `ai-engineer-roadmap
 
 ## Propósito
 
-Este repositorio es el índice de mi formación autodidacta como AI Engineer sobre stack Java + Spring AI, seguida durante 2026. No contiene código: es un hub que enlaza a los repositorios independientes de los proyectos del roadmap (análisis de documentos, servidor MCP con agente, knowledge base RAG multi-tenant, y AI gateway en AWS). Aquí viven la narrativa del roadmap completo y las decisiones arquitectónicas transversales. Las notas de las sesiones de estudio se mantienen fuera de este repositorio.
+Este repositorio es el índice de mi formación autodidacta como AI Engineer sobre stack Java + Spring AI, seguida durante 2026. No contiene código: es un hub que enlaza a los repositorios independientes de los proyectos del roadmap (análisis de documentos, plataforma ERP con servidor MCP y agente, knowledge base RAG multi-tenant, y AI gateway en AWS). Aquí viven la narrativa del roadmap completo y las decisiones arquitectónicas transversales. Las notas de las sesiones de estudio se mantienen fuera de este repositorio.
 
 El repositorio existe con dos audiencias en mente: los reclutadores y colegas técnicos que quieran entender qué he construido y cómo lo he pensado, y yo mismo dentro de unos años, mirando atrás con honestidad al camino recorrido.
 
@@ -31,13 +31,18 @@ Las tareas habituales aquí son tres: actualizar `README.md` cuando termine una 
 ```
 ai-engineer-roadmap-java/
 ├── README.md              Portada pública: qué es el roadmap y estado actual
+├── projects.md            Catálogo normalizado de proyectos
 ├── CLAUDE.md              Este fichero: instrucciones de trabajo
+├── CONTRIBUTING.md        Guía de contribución y mantenimiento
 ├── LICENSE                MIT
-├── .gitignore
-└── decisions/             ADRs transversales, cuando exista el primero
+├── .gitignore             Exclusiones de archivos locales
+├── .github/
+│   └── workflows/
+│       └── documentation.yml
+└── decisions/             ADRs transversales
 ```
 
-El directorio `decisions/` se creará cuando exista el primer ADR. Los ADRs siguen el patrón `NNNN-titulo-en-kebab-case.md` y documentan únicamente decisiones arquitectónicas transversales que afecten a varios proyectos.
+El directorio `decisions/` contiene ADRs transversales. Los ADRs siguen el patrón `NNNN-titulo-en-kebab-case.md` y documentan únicamente decisiones arquitectónicas transversales que afecten a varios proyectos.
 
 ## Convenciones
 
@@ -59,7 +64,7 @@ Todo el contenido en español. Fechas en formato ISO 8601 (`2026-07-23`). Commit
 
 ## Relación con los repositorios de proyecto
 
-Este hub referencia cuatro repositorios de proyecto, uno por cada proyecto del roadmap. Los nombres definitivos se decidirán al crear cada repositorio, no antes. El `README.md` de este hub mantiene enlaces actualizados a los cuatro repositorios y a su estado (planificado, en desarrollo, completado, en pausa).
+Este hub referencia los repositorios de los proyectos del roadmap. Un proyecto puede estar implementado por uno o varios repositorios; por ejemplo, la plataforma ERP de la Fase 2 separa `erp-mcp-server` y `erp-purchasing-agent`. Los nombres definitivos de los repositorios futuros se decidirán al crearlos. El `README.md` y `projects.md` de este hub mantienen sus enlaces y estados actualizados (planificado, en desarrollo, completado, en pausa).
 
 Los repositorios de proyecto no dependen técnicamente de este hub: son autónomos, tienen su propio `CLAUDE.md`, sus propias convenciones (adaptadas al hecho de que son repos de código Java) y su propio ciclo de vida. La relación es solo narrativa: el hub cuenta la historia global, los repos de proyecto viven cada uno su historia local.
 
