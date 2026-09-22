@@ -26,7 +26,7 @@ El roadmap utiliza tres niveles distintos:
 
 Este repositorio es el **hub documental** del roadmap. No es un monorepo, no contiene código funcional y no es una dependencia técnica de los repositorios de proyecto. La relación entre ellos es narrativa y de portfolio: cada repositorio de proyecto mantiene su propio ciclo de vida, build, tests y despliegue.
 
-## El roadmap en una tabla
+## Fases de aprendizaje
 
 | Fase | Contenido                                      | Estado         |
 | ---- | ---------------------------------------------- | -------------- |
@@ -40,17 +40,52 @@ Este repositorio es el **hub documental** del roadmap. No es un monorepo, no con
 
 Cada fase termina con uno o varios proyectos entregables en repositorios independientes.
 
-## Los proyectos
+## Proyectos entregables
 
-1. **Analizador de CVs con Spring AI y Anthropic Claude** (Fase 1). Servicio Spring Boot con tres endpoints: chat con memoria conversacional persistida en Redis segmentada por conversationId, análisis estructurado de CV en texto plano, y análisis multimodal de CV en PDF nativo. Observabilidad de latencia, tokens y coste estimado por llamada mediante advisor custom de Spring AI. Manejo de errores homogéneo con ProblemDetail RFC 7807. → **[document-analyzer-ai](https://github.com/Toleflaco/document-analyzer-ai)** — Completado.
+Los proyectos son las unidades conceptuales que demuestran los objetivos de cada fase. Un proyecto puede estar implementado por uno o varios repositorios independientes.
 
-2. **Servidor MCP + agente ReAct sobre dominio ERP** (Fase 2). Dos repositorios que forman un par: un servidor MCP que expone operaciones de dominio ERP (suppliers, products, purchase orders, invoices) como tools sobre Streamable HTTP, y un agente ReAct que consume esas tools vía cliente MCP dinámico para cumplir objetivos de compras expresados en lenguaje natural.
-    - → **[erp-mcp-server](https://github.com/Toleflaco/erp-mcp-server)** — Servidor MCP. Completado, con CI/CD de tres jobs (build+test, docker-build, smoke test contra el endpoint MCP).
-    - → **[erp-purchasing-agent](https://github.com/Toleflaco/erp-purchasing-agent)** — Agente ReAct. En desarrollo.
+### Proyecto 1: Analizador de CVs con Spring AI y Anthropic Claude
 
-3. **Knowledge base empresarial multi-tenant** (Fase 3). Sistema RAG con búsqueda híbrida, reranking, citación obligatoria y aislamiento estricto entre tenants. → *Planificado.*
+**Fase:** 1 · **Estado:** Completado
 
-4. **AI Gateway multi-modelo en AWS** (Fase 5). Servicio en ECS Fargate con routing entre modelos, cache semántico, fallback automático y observabilidad de coste con Prometheus y Grafana. → *Planificado.*
+Servicio Spring Boot con tres endpoints: chat con memoria conversacional persistida en Redis segmentada por `conversationId`, análisis estructurado de CV en texto plano y análisis multimodal de CV en PDF nativo. Incluye observabilidad de latencia, tokens y coste estimado por llamada mediante un advisor custom de Spring AI, además de manejo homogéneo de errores con ProblemDetail RFC 7807.
+
+**Repositorio:**
+
+- **[document-analyzer-ai](https://github.com/Toleflaco/document-analyzer-ai)** — Implementación completa del proyecto.
+
+### Proyecto 2: Plataforma ERP con servidor MCP y agente ReAct
+
+**Fase:** 2 · **Estado:** En progreso
+
+Este proyecto está compuesto por dos repositorios independientes que forman un par: el servidor MCP expone operaciones de dominio ERP (suppliers, products, purchase orders, invoices) como tools sobre Streamable HTTP, y el agente ReAct consume esas tools mediante un cliente MCP dinámico para cumplir objetivos de compras expresados en lenguaje natural.
+
+**Repositorios:**
+
+- **[erp-mcp-server](https://github.com/Toleflaco/erp-mcp-server)** — Servidor MCP. Completado, con CI/CD de tres jobs (build+test, docker-build y smoke test contra el endpoint MCP).
+- **[erp-purchasing-agent](https://github.com/Toleflaco/erp-purchasing-agent)** — Agente ReAct. En desarrollo.
+
+### Proyecto 3: Knowledge base empresarial multi-tenant
+
+**Fase:** 3 · **Estado:** Planificado
+
+Sistema RAG con búsqueda híbrida, reranking, citación obligatoria y aislamiento estricto entre tenants.
+
+**Repositorio:**
+
+- Pendiente de crear.
+
+### Proyecto 4: AI Gateway multi-modelo en AWS
+
+**Fase:** 5 · **Estado:** Planificado
+
+Servicio en ECS Fargate con routing entre modelos, cache semántico, fallback automático y observabilidad de coste con Prometheus y Grafana.
+
+**Repositorio:**
+
+- Pendiente de crear.
+
+La Fase 4 es transversal a los proyectos anteriores y todavía no tiene un proyecto entregable independiente definido.
 
 ## Divergencias del plan original
 
