@@ -6,7 +6,7 @@
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg)](https://openjdk.org/projects/jdk/21/)
 [![Spring AI 2.0](https://img.shields.io/badge/Spring%20AI-2.0-blue.svg)](https://spring.io/projects/spring-ai)
 
-Roadmap público de mi transición de Java backend a AI Engineer, con cuatro proyectos y bitácora en abierto.
+Roadmap público de mi transición de Java backend a AI Engineer, estructurado en fases y con proyectos entregables por fase.
 
 ---
 
@@ -14,7 +14,7 @@ Roadmap público de mi transición de Java backend a AI Engineer, con cuatro pro
 
 Soy Manuel Toledano, desarrollador Java backend. Después de reactivar mi carrera en desarrollo en 2025 con dos proyectos backend serios (monolito y microservicios sobre Spring Boot), he decidido apostar por la IA aplicada como siguiente paso lógico: no abandono Java, lo llevo al terreno donde el mercado está demandando perfiles. Este repositorio documenta ese camino en abierto.
 
-Es un hub. No contiene código: enlaza a los repositorios de proyecto y aloja la bitácora de progreso y las decisiones arquitectónicas transversales.
+Es un hub. No contiene código: enlaza a los repositorios de proyecto y aloja las decisiones arquitectónicas transversales.
 
 ## El roadmap en una tabla
 
@@ -28,7 +28,7 @@ Es un hub. No contiene código: enlaza a los repositorios de proyecto y aloja la
 | 5    | Cloud, despliegue y LLMOps sobre AWS           | ⏳ Planificada |
 | 6    | Criterio arquitectónico y portfolio            | ⏳ Planificada |
 
-Cada fase termina con uno o varios proyectos entregables en repositorios independientes. La bitácora de sesiones registra el progreso día a día.
+Cada fase termina con uno o varios proyectos entregables en repositorios independientes.
 
 ## Los proyectos
 
@@ -52,7 +52,6 @@ Estas divergencias se tratan como deuda pedagógica explícita, no como piezas t
 
 ## Cómo navegar el repositorio
 
-- **`bitacora/`** — Una entrada por sesión de estudio, en orden cronológico.
 - **`decisions/`** — ADRs transversales que afectan a más de un proyecto (formato Michael Nygard). Aparecerá cuando exista el primero.
 - **`CLAUDE.md`** — Instrucciones de trabajo para Claude Code en este repositorio.
 
@@ -67,4 +66,4 @@ Estas divergencias se tratan como deuda pedagógica explícita, no como piezas t
 
 ---
 
-*Última actualización: 2026-09-21*
+*Última actualización: 2026-09-22*
