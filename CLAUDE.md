@@ -10,6 +10,16 @@ Este repositorio es el índice y la bitácora de mi formación autodidacta como 
 
 El repositorio existe con dos audiencias en mente: los reclutadores y colegas técnicos que quieran entender qué he construido y cómo lo he pensado, y yo mismo dentro de unos años, mirando atrás con honestidad al camino recorrido.
 
+## Modelo del roadmap
+
+El roadmap distingue tres niveles:
+
+- **Fase:** bloque de aprendizaje con objetivos técnicos concretos.
+- **Proyecto:** entregable conceptual que demuestra los objetivos de una fase.
+- **Repositorio:** unidad independiente de código que implementa todo o parte de un proyecto.
+
+Este repositorio es un hub documental. No es un monorepo, no contiene código funcional y no es una dependencia técnica de los repositorios de proyecto. La relación entre ellos es narrativa y de portfolio; cada repositorio de proyecto tiene su propio ciclo de vida, build, tests y despliegue.
+
 ## Cómo trabajar en este repositorio
 
 Las tareas habituales aquí son cuatro. Primera, redactar las entradas de bitácora al final de cada sesión de estudio, con el formato definido más abajo. Segunda, actualizar `README.md` cuando termine una fase del roadmap o tome una decisión que cambie el plan. Tercera, escribir ADRs en `decisions/` cuando adopte una decisión arquitectónica transversal que afecte a varios proyectos del roadmap (formato Michael Nygard, mismo que en `task-manager-api`). Cuarta, enlazar este hub con los repositorios de proyecto conforme se vayan creando, uno por fase.

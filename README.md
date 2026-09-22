@@ -16,6 +16,16 @@ Soy Manuel Toledano, desarrollador Java backend. Después de reactivar mi carrer
 
 Es un hub. No contiene código: enlaza a los repositorios de proyecto y aloja las decisiones arquitectónicas transversales.
 
+## Modelo del roadmap
+
+El roadmap utiliza tres niveles distintos:
+
+- **Fase:** bloque de aprendizaje con objetivos técnicos concretos.
+- **Proyecto:** entregable conceptual que demuestra los objetivos de una fase.
+- **Repositorio:** unidad independiente de código que implementa todo o parte de un proyecto.
+
+Este repositorio es el **hub documental** del roadmap. No es un monorepo, no contiene código funcional y no es una dependencia técnica de los repositorios de proyecto. La relación entre ellos es narrativa y de portfolio: cada repositorio de proyecto mantiene su propio ciclo de vida, build, tests y despliegue.
+
 ## El roadmap en una tabla
 
 | Fase | Contenido                                      | Estado         |
