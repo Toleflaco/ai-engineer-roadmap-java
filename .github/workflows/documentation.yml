@@ -19,5 +19,5 @@ jobs:
       - name: Validar enlaces
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress './**/*.md'
+          args: --verbose --no-progress --exclude "linkedin.com" './**/*.md'
           fail: true

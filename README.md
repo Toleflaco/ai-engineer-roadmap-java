@@ -1,8 +1,8 @@
 # AI Engineer Roadmap · Java + Spring AI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/status-in%20progress-orange.svg)]()
-[![Phase](https://img.shields.io/badge/phase-2%20Tool%20Calling%20%26%20MCP-blue.svg)]()
+[![Status](https://img.shields.io/badge/status-in%20progress-orange.svg)](https://github.com/Toleflaco/ai-engineer-roadmap-java)
+[![Phase](https://img.shields.io/badge/phase-2%20Tool%20Calling%20%26%20MCP-blue.svg)](https://github.com/Toleflaco/ai-engineer-roadmap-java#fases-de-aprendizaje)
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg)](https://openjdk.org/projects/jdk/21/)
 [![Spring AI 2.0](https://img.shields.io/badge/Spring%20AI-2.0-blue.svg)](https://spring.io/projects/spring-ai)
 

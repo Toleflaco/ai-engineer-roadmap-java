@@ -12,7 +12,7 @@ Todavía no se han creado releases versionadas para estos proyectos.
 - **Fase:** 1 — Fundamentos LLM + Spring AI core
 - **Estado:** Completado
 - **Repositorios:** [document-analyzer-ai](https://github.com/Toleflaco/document-analyzer-ai)
-- **Versión o commit de referencia:** [`675c07f398e3dfc367342e225d53f766a4e11902`](https://github.com/Toleflaco/document-analyzer-ai/commit/675c07f398e3dfc367342e225d53f766a4e11902) en `main`; release pendiente
+- **Versión o commit de referencia:** [`94c73dc1eb68352b85b7770afb8e2a2b2a559f8c`](https://github.com/Toleflaco/document-analyzer-ai/commit/94c73dc1eb68352b85b7770afb8e2a2b2a559f8c) en `main`; release pendiente
 - **Objetivo:** Aplicar `ChatClient`, output estructurado, memoria conversacional,
   multimodalidad, manejo homogéneo de errores y observabilidad básica en un
   servicio Spring Boot orientado al análisis de CVs.
@@ -43,7 +43,7 @@ Todavía no se han creado releases versionadas para estos proyectos.
   independientes porque el servidor MCP y el agente ReAct tienen
   responsabilidades, ciclos de vida y despliegues separados.
 - **Versión o commit de referencia:**
-  - `erp-mcp-server`: [`94c73dc1eb68352b85b7770afb8e2a2b2a559f8c`](https://github.com/Toleflaco/erp-mcp-server/commit/94c73dc1eb68352b85b7770afb8e2a2b2a559f8c) en `main`
+  - `erp-mcp-server`: [`8448f6b1b1681680cadbfa6221f845109715db36`](https://github.com/Toleflaco/erp-mcp-server/commit/8448f6b1b1681680cadbfa6221f845109715db36) en `main`
   - `erp-purchasing-agent`: `8448f6b1b1681680cadbfa6221f845109715db36` en `main`
   - Releases versionadas: pendientes
 - **Objetivo:** Separar el proveedor de tools del consumidor agente para practicar
