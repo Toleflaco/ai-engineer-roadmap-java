@@ -6,7 +6,7 @@ Instrucciones de trabajo para Claude Code en el repositorio `ai-engineer-roadmap
 
 ## Propósito
 
-Este repositorio es el índice y la bitácora de mi formación autodidacta como AI Engineer sobre stack Java + Spring AI, seguida durante 2026. No contiene código: es un hub que enlaza a cuatro repositorios independientes, uno por cada proyecto del roadmap (análisis de documentos, servidor MCP con agente, knowledge base RAG multi-tenant, y AI gateway en AWS). Aquí viven la narrativa del roadmap completo, la bitácora de progreso y las decisiones arquitectónicas transversales.
+Este repositorio es el índice de mi formación autodidacta como AI Engineer sobre stack Java + Spring AI, seguida durante 2026. No contiene código: es un hub que enlaza a los repositorios independientes de los proyectos del roadmap (análisis de documentos, servidor MCP con agente, knowledge base RAG multi-tenant, y AI gateway en AWS). Aquí viven la narrativa del roadmap completo y las decisiones arquitectónicas transversales. Las notas de las sesiones de estudio se mantienen fuera de este repositorio.
 
 El repositorio existe con dos audiencias en mente: los reclutadores y colegas técnicos que quieran entender qué he construido y cómo lo he pensado, y yo mismo dentro de unos años, mirando atrás con honestidad al camino recorrido.
 
@@ -22,7 +22,7 @@ Este repositorio es un hub documental. No es un monorepo, no contiene código fu
 
 ## Cómo trabajar en este repositorio
 
-Las tareas habituales aquí son cuatro. Primera, redactar las entradas de bitácora al final de cada sesión de estudio, con el formato definido más abajo. Segunda, actualizar `README.md` cuando termine una fase del roadmap o tome una decisión que cambie el plan. Tercera, escribir ADRs en `decisions/` cuando adopte una decisión arquitectónica transversal que afecte a varios proyectos del roadmap (formato Michael Nygard, mismo que en `task-manager-api`). Cuarta, enlazar este hub con los repositorios de proyecto conforme se vayan creando, uno por fase.
+Las tareas habituales aquí son tres: actualizar `README.md` cuando termine una fase del roadmap o tome una decisión que cambie el plan; escribir ADRs en `decisions/` cuando adopte una decisión arquitectónica transversal que afecte a varios proyectos del roadmap (formato Michael Nygard, mismo que en `task-manager-api`); y enlazar este hub con los repositorios de proyecto conforme se vayan creando o evolucionando.
 
 **Lo que NO se hace aquí.** No se escribe código Java, ni tests, ni configuración de Spring, ni Dockerfiles. Este repositorio es documentación. Cualquier código funcional vive en los repositorios de proyecto correspondientes. Si al trabajar aquí surge la necesidad de generar código, es señal de que la tarea pertenece a otro repositorio y hay que migrar al que toque.
 
@@ -34,11 +34,10 @@ ai-engineer-roadmap-java/
 ├── CLAUDE.md              Este fichero: instrucciones de trabajo
 ├── LICENSE                MIT
 ├── .gitignore
-├── bitacora/              Diario de progreso, un fichero por sesión
-└── decisions/             ADRs transversales (a partir de Fase 1)
+└── decisions/             ADRs transversales, cuando exista el primero
 ```
 
-Las carpetas `bitacora/` y `decisions/` se crean cuando existan sus primeros contenidos, no antes. Los ficheros de bitácora siguen el patrón `SesionNN-AAAA-MM-DD.md`, numerados de forma incremental global (no por fase). Las sesiones que son continuación directa de otra el mismo bloque de trabajo añaden un sufijo decimal (`SesionNN-2-AAAA-MM-DD.md`, `SesionNN-3-...`); las sesiones cortas intercaladas entre dos sesiones numeradas usan un decimal propio (`SesionNN.5-AAAA-MM-DD.md`). Los ADRs siguen el patrón `NNNN-titulo-en-kebab-case.md`, numerados de forma incremental.
+El directorio `decisions/` se creará cuando exista el primer ADR. Los ADRs siguen el patrón `NNNN-titulo-en-kebab-case.md` y documentan únicamente decisiones arquitectónicas transversales que afecten a varios proyectos.
 
 ## Convenciones
 
@@ -68,7 +67,6 @@ Los repositorios de proyecto no dependen técnicamente de este hub: son autónom
 
 Al ser un repositorio de documentación sin código, no hay comandos de build ni de test. Los flujos habituales son de Git puro:
 
-- Añadir entrada de bitácora al final de cada sesión, en `bitacora/SesionNN-AAAA-MM-DD.md`.
 - Actualizar el estado del roadmap en `README.md` cuando se cierre una fase.
 - Escribir un ADR nuevo en `decisions/` cuando se adopte una decisión transversal.
 - Commits directos a `main`: al ser un repo unipersonal de documentación, no hay ramas de feature ni pull requests internos.
